@@ -84,15 +84,22 @@
 
 
 
-<meta name="description" content="Programmer Tech">
-<meta property="og:type" content="website">
-<meta property="og:title" content="SteveWoo's Tech Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="###后期静态绑定解读先看下官网的这段代码官方解释下面摘自官网
+
+后期静态绑定的解析会一直到取得一个完全解析了的静态调用为止。另一方面，如果静态调用使用 parent:: 或者 self:: 将转发调用信息。准确说，后期静态绑定工作原理是存储了在上一个“非转发调用”（non-forwarding call）的类名。当进行静态方法调用时，该类名即为明确指定的那个（通常在 :: 运算符左侧部分）；当进">
+<meta property="og:type" content="article">
+<meta property="og:title" content="后期静态绑定解读">
+<meta property="og:url" content="http://yoursite.com/2016/10/28/后期静态绑定解读/index.html">
 <meta property="og:site_name" content="SteveWoo's Tech Blog">
-<meta property="og:description" content="Programmer Tech">
+<meta property="og:description" content="###后期静态绑定解读先看下官网的这段代码官方解释下面摘自官网
+
+后期静态绑定的解析会一直到取得一个完全解析了的静态调用为止。另一方面，如果静态调用使用 parent:: 或者 self:: 将转发调用信息。准确说，后期静态绑定工作原理是存储了在上一个“非转发调用”（non-forwarding call）的类名。当进行静态方法调用时，该类名即为明确指定的那个（通常在 :: 运算符左侧部分）；当进">
+<meta property="og:updated_time" content="2016-10-28T10:49:30.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SteveWoo's Tech Blog">
-<meta name="twitter:description" content="Programmer Tech">
+<meta name="twitter:title" content="后期静态绑定解读">
+<meta name="twitter:description" content="###后期静态绑定解读先看下官网的这段代码官方解释下面摘自官网
+
+后期静态绑定的解析会一直到取得一个完全解析了的静态调用为止。另一方面，如果静态调用使用 parent:: 或者 self:: 将转发调用信息。准确说，后期静态绑定工作原理是存储了在上一个“非转发调用”（non-forwarding call）的类名。当进行静态方法调用时，该类名即为明确指定的那个（通常在 :: 运算符左侧部分）；当进">
 
 
 
@@ -113,9 +120,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/10/28/后期静态绑定解读/"/>
 
-  <title> SteveWoo's Tech Blog </title>
+  <title> 后期静态绑定解读 | SteveWoo's Tech Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -136,9 +143,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -215,9 +220,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -237,10 +242,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/10/28/后期静态绑定解读/" itemprop="url">
-                  后期静态绑定解读
-                </a>
+                后期静态绑定解读
               
             
           </h1>
@@ -280,9 +282,7 @@
       
 
       
-        
-          
-            <p>###后期静态绑定解读<br>先看下官网的这段代码<br><a href="http://www.golaravel.com/php/language.oop5.late-static-bindings.html" target="_blank" rel="external">官方解释</a><br>下面摘自官网</p>
+        <p>###后期静态绑定解读<br>先看下官网的这段代码<br><a href="http://www.golaravel.com/php/language.oop5.late-static-bindings.html" target="_blank" rel="external">官方解释</a><br>下面摘自官网</p>
 <blockquote>
 <p>后期静态绑定的解析会一直到取得一个完全解析了的静态调用为止。另一方面，如果静态调用使用 parent:: 或者 self:: 将转发调用信息。<br>准确说，后期静态绑定工作原理是存储了在上一个“非转发调用”（non-forwarding call）的类名。当进行静态方法调用时，该类名即为明确指定的那个（通常在 :: 运算符左侧部分）；当进行非静态方法调用时，即为该对象所属的类。所谓的“转发调用”（forwarding call）指的是通过以下几种方式进行的静态调用：self::，parent::，static:: 以及 forward_static_call()。可用 get_called_class() 函数来得到被调用的方法所在的类名，static:: 则指出了其范围。</p>
 </blockquote>
@@ -296,16 +296,20 @@
 <p>如果我们只留下A下的foo()<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line">&lt;?php</div><div class="line">class A &#123;</div><div class="line">    public static function foo() &#123;</div><div class="line">        static::who();</div><div class="line">    &#125;</div><div class="line">    public static function who() &#123;</div><div class="line">        echo __CLASS__.&quot;\n&quot;;</div><div class="line">    &#125;</div><div class="line">&#125;</div><div class="line">class B extends A &#123;</div><div class="line">    public static function test() &#123;</div><div class="line">        A::foo();</div><div class="line">        parent::foo();</div><div class="line">        self::foo();</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;</div><div class="line">class C extends B &#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line">class D extends C &#123;</div><div class="line"></div><div class="line">&#125;</div><div class="line">D::test();</div><div class="line">// A A A</div></pre></td></tr></table></figure></p>
 <p>也就这里没有静态绑定成功 直接用的就是A类下的who()<br>现在就很明显了当我们调用一个static::function() (静态绑定方法)他会把这个方法绑定到在继承关系中存在这个方法的最年轻的类中的方法。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
@@ -313,117 +317,32 @@
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/10/04/新家/" rel="next" title="新家">
+                <i class="fa fa-chevron-left"></i> 新家
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2016/10/04/新家/" itemprop="url">
-                  新家
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-04T15:40:36+08:00" content="2016-10-04">
-              2016-10-04
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <blockquote>
-<p>由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。</p>
-</blockquote>
-<p>  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮好。😊</p>
-<p>这里主要还是写点PHP，C，数据结构，设计模式这类东西，希望对自己有点作用。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -431,6 +350,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -450,8 +373,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://tva3.sinaimg.cn/crop.0.0.512.512.180/7503dc51jw8f52v5x7bltj20e80e8gmw.jpg"
@@ -487,6 +419,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <p class="post-toc-empty">此文章未包含目录</p>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -590,6 +533,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
