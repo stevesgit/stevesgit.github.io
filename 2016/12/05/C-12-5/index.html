@@ -84,22 +84,16 @@
 
 
 
-<meta name="description" content="由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。
-
-  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮">
+<meta name="description" content="早上解决了昨天的那个队列的问题，结果发现错误的原因是出队列的那个函数存在着问题，具体的原因是那个队列的头是不应该存任何数据的，如果队列要换头的话就应该是front-&amp;gt;next作为换头的语句Q-&amp;gt;front-&amp;gt;next=p-&amp;gt;next 而不是之前的Q-&amp;gt;front = p-&amp;gt;next。中间调试了很久一直调试不出来，C出现的问题的时候，虽然可以调试，但是调试的时候很">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新家">
-<meta property="og:url" content="http://yoursite.com/2016/10/04/新家/index.html">
+<meta property="og:title" content="指针实现二维数组">
+<meta property="og:url" content="http://yoursite.com/2016/12/05/C-12-5/index.html">
 <meta property="og:site_name" content="SteveWoo's Tech Blog">
-<meta property="og:description" content="由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。
-
-  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮">
-<meta property="og:updated_time" content="2016-10-04T07:51:24.000Z">
+<meta property="og:description" content="早上解决了昨天的那个队列的问题，结果发现错误的原因是出队列的那个函数存在着问题，具体的原因是那个队列的头是不应该存任何数据的，如果队列要换头的话就应该是front-&amp;gt;next作为换头的语句Q-&amp;gt;front-&amp;gt;next=p-&amp;gt;next 而不是之前的Q-&amp;gt;front = p-&amp;gt;next。中间调试了很久一直调试不出来，C出现的问题的时候，虽然可以调试，但是调试的时候很">
+<meta property="og:updated_time" content="2016-12-05T08:05:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="新家">
-<meta name="twitter:description" content="由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。
-
-  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮">
+<meta name="twitter:title" content="指针实现二维数组">
+<meta name="twitter:description" content="早上解决了昨天的那个队列的问题，结果发现错误的原因是出队列的那个函数存在着问题，具体的原因是那个队列的头是不应该存任何数据的，如果队列要换头的话就应该是front-&amp;gt;next作为换头的语句Q-&amp;gt;front-&amp;gt;next=p-&amp;gt;next 而不是之前的Q-&amp;gt;front = p-&amp;gt;next。中间调试了很久一直调试不出来，C出现的问题的时候，虽然可以调试，但是调试的时候很">
 
 
 
@@ -120,9 +114,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/04/新家/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/05/C-12-5/"/>
 
-  <title> 新家 | SteveWoo's Tech Blog </title>
+  <title> 指针实现二维数组 | SteveWoo's Tech Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -242,7 +236,7 @@
             
             
               
-                新家
+                指针实现二维数组
               
             
           </h1>
@@ -254,8 +248,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-10-04T15:40:36+08:00" content="2016-10-04">
-              2016-10-04
+            <time itemprop="dateCreated" datetime="2016-12-05T15:59:18+08:00" content="2016-12-05">
+              2016-12-05
             </time>
           </span>
 
@@ -282,11 +276,10 @@
       
 
       
-        <blockquote>
-<p>由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。</p>
-</blockquote>
-<p>  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮好。😊</p>
-<p>这里主要还是写点PHP，C，数据结构，设计模式这类东西，希望对自己有点作用。</p>
+        <p>早上解决了昨天的那个队列的问题，结果发现错误的原因是出队列的那个函数存在着问题，具体的原因是那个队列的头是不应该存任何数据的，如果队列要换头的话就应该是<code>front-&gt;next</code>作为换头的语句<code>Q-&gt;front-&gt;next=p-&gt;next</code> 而不是之前的<code>Q-&gt;front = p-&gt;next</code>。中间调试了很久一直调试不出来，C出现的问题的时候，虽然可以调试，但是调试的时候很难看出问题，需要一步步仔细的检查。然后就是研究了下指针数组，数组指针，用指针实现数组。也就是昨天的那一块用数组的方式实现层序遍历。具体代码如下。<br><code>// 分配内存
+    struct TreeNode* ** traversalNode = (struct TreeNode* **)malloc(*returnSize * sizeof(struct TreeNode* *));
+        int **traversalVal = (int**)malloc(*returnSize * sizeof(int*));
+            *columnSizes = (int*)malloc(*returnSize * sizeof(int));</code><br>                指针一开始不容易理解，但只要理解了，其实这三种格式都是一样的，就是在分配内存，先说最简单的就是最下面的那一行代码，这就是一个一唯数组，首先就是开一块能存储8个int的大小的空间，然后把指向该空间的首地址传递给 <code>*columnSizes</code>,然后我们访问数组的每一个元素就<code>*columnSizes[0]~*columnSizes[7]</code>访问。平常我们说数组就是指针，<code>int a[5];*a, *(a+1);</code>可以这样转化。当然我觉得<code>*(*columnSizes+1)</code>也可实现。<br>                再来说上面的那几行，其实也是一样的，无非这里开辟内存的空间变成了int<em>,然后这里面存了比如说有`8 </em> sizeof(int<em>)<code>,同理是开辟了一块存储</code>8</em>int<em><code>大小的地址这可以时说是我们二维数组中的第一维度的存储空间。然后把这个存储空间的首地址赋值给了</code>int **traversalVal<code>。但是这里要考虑到一个问题，我们为什么要这样做，和int a[9][10]有什么区别吗?好了问题来了，当我们这样做有什么不同吗？答案是有，目前我能想到的就是，这样做能够更好的利用空间。怎么说呢，他能保证数组的每块空间都能利用到。（因为我们在操作的时候只知道一个树的深度，但不知道树每层有多少个节点），也就是说我们只能确定a[n]数组的第一个维度。当我们需要确定数组的第二个维度的时候，只需要</code>traversalVal[0] = (int</em>)malloc(n <em> sizeof(int));`这句话的意思就是说把存了这么多n</em>int存储空间的首地址指向给traversalVal[0];现在这块内容就变成了n个int的首地址了（就是说traversalVal[0]是这块内容的指针，指向这块内容的地址）。然后也就是说<code>traversalVal[n]</code>指向的内容（内容只要是Int就行，多大的int不做限制）的地址。</p>
 
       
     </div>
@@ -312,13 +305,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2016/12/03/第一次实习的两个月/" rel="next" title="实习的那两个月">
+                <i class="fa fa-chevron-left"></i> 实习的那两个月
+              </a>
+            
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/10/28/后期静态绑定解读/" rel="prev" title="后期静态绑定解读">
-                后期静态绑定解读 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
