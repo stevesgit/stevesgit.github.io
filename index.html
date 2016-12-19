@@ -301,43 +301,32 @@
       
         
           
-            <h1 id="Same-Tree"><a href="#Same-Tree" class="headerlink" title="Same Tree"></a>Same Tree</h1><blockquote>
+            <h1 id="Same-Tree"><a href="#Same-Tree" class="headerlink" title="Same Tree"></a>Same Tree</h1><hr>
+<blockquote>
 <p>Given two binary trees, write a function to check if they are equal or not.<br>Two binary trees are considered equal if they are structurally identical and the nodes have the same value.<br>Subscribe to see which companies asked this question</p>
 </blockquote>
-<p>题目就是判断两颗树是不是相同的树。<br>解决思路：依次去判断这棵树的每个节点，是否存在这个节点，每个节点的值是否一样，然后他的子节点是否相同是否遵循以上规则。这就可以用递归来做。<br>时间复杂度O(n),空间复杂度O(logn)<br>    /**</p>
-<pre><code> * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
- * };
- */
-class Solution {
-public:
-    int sumOfLeftLeaves(TreeNode* root) {
-        int res = 0;
-           if(root ==NULL||root-&gt;left==NULL&amp;&amp;root-&gt;right==NULL){
-            return res;
+<p>题目就是判断两颗树是不是相同的树。<br>解决思路：依次去判断这棵树的每个节点，是否存在这个节点，每个节点的值是否一样，然后他的子节点是否相同是否遵循以上规则。这就可以用递归来做。<br>时间复杂度O(n),空间复杂度O(logn)</p>
+<pre><code>/**
+     * Definition for a binary tree node.
+     * struct TreeNode {
+     *     int val;
+     *     TreeNode *left;
+     *     TreeNode *right;
+     *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+     * };
+     */
+    class Solution {
+    public:
+        bool isSameTree(TreeNode* p, TreeNode* q) {
+            if(p == NULL&amp;&amp;q == NULL)
+                return true;
+            if(p == NULL||q == NULL)
+                return false;
+            if(p-&gt;val != q-&gt;val)
+                return false;
+            return isSameTree(p-&gt;left,q-&gt;left)&amp;&amp;isSameTree(p-&gt;right,q-&gt;right);
         }
-        getSolution(root, res);
-        return res;
-    }
-    void getSolution(TreeNode* root,int &amp;res){
-
-        if(!root-&gt;left&amp;&amp;!root-&gt;right)
-        {
-             res = root-&gt;val+res;
-        }
-        if(root-&gt;left != NULL){
-            getSolution(root-&gt;left,res);
-        }
-        if(root-&gt;right != NULL&amp;&amp;(root-&gt;right-&gt;left !=NULL||root-&gt;right-&gt;right!=NULL)){
-            getSolution(root-&gt;right,res);
-        }
-
-    }
-};
+    };
 </code></pre>
           
         
