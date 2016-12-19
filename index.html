@@ -238,6 +238,155 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/19/sameTree/" itemprop="url">
+                  SameTree
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-19T12:26:45+08:00" content="2016-12-19">
+              2016-12-19
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/C-数据结构/" itemprop="url" rel="index">
+                    <span itemprop="name">C&数据结构</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="Same-Tree"><a href="#Same-Tree" class="headerlink" title="Same Tree"></a>Same Tree</h1><blockquote>
+<p>Given two binary trees, write a function to check if they are equal or not.<br>Two binary trees are considered equal if they are structurally identical and the nodes have the same value.<br>Subscribe to see which companies asked this question</p>
+</blockquote>
+<p>题目就是判断两颗树是不是相同的树。<br>解决思路：依次去判断这棵树的每个节点，是否存在这个节点，每个节点的值是否一样，然后他的子节点是否相同是否遵循以上规则。这就可以用递归来做。<br>时间复杂度O(n),空间复杂度O(logn)<br>    /**</p>
+<pre><code> * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    int sumOfLeftLeaves(TreeNode* root) {
+        int res = 0;
+           if(root ==NULL||root-&gt;left==NULL&amp;&amp;root-&gt;right==NULL){
+            return res;
+        }
+        getSolution(root, res);
+        return res;
+    }
+    void getSolution(TreeNode* root,int &amp;res){
+
+        if(!root-&gt;left&amp;&amp;!root-&gt;right)
+        {
+             res = root-&gt;val+res;
+        }
+        if(root-&gt;left != NULL){
+            getSolution(root-&gt;left,res);
+        }
+        if(root-&gt;right != NULL&amp;&amp;(root-&gt;right-&gt;left !=NULL||root-&gt;right-&gt;right!=NULL)){
+            getSolution(root-&gt;right,res);
+        }
+
+    }
+};
+</code></pre>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/05/C-12-5/" itemprop="url">
                   指针实现二维数组
                 </a>
@@ -677,7 +826,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">4</span>
+              <span class="site-state-item-count">5</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
