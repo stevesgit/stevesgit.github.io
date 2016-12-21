@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="leetcode," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,22 +84,28 @@
 
 
 
-<meta name="description" content="Same Tree
+<meta name="description" content="CGI,FastCGI,PHP-CGI,PHP-FPM
 
-Given two binary trees, write a function to check if they are equal or not.Two binary trees are considered equal if they are structurally identical and the nodes have the same value.Subscri">
+之前研究了下一次完整的Web请求涉及到的过程，今天在学Java的JSP的时候就突然想起来想好好总结一下PHP的CGI有关的知识，之前看过好几遍CGI但是过一段时间总是忘记，又由于重新学习了一遍Web协议，这次再看也许会焕然一新。
+
+CGI出现原因浏览器通过http协议向服务器请求一个资源时，如果这个请求是静态（图片，html，mp3,pdf">
 <meta property="og:type" content="article">
-<meta property="og:title" content="SameTree">
-<meta property="og:url" content="http://yoursite.com/2016/12/19/sameTree/index.html">
+<meta property="og:title" content="CGI,FastCGI,PHP-CGI,PHP-FPM重识">
+<meta property="og:url" content="http://yoursite.com/2016/12/21/关于CGI/index.html">
 <meta property="og:site_name" content="SteveWoo's Tech Blog">
-<meta property="og:description" content="Same Tree
+<meta property="og:description" content="CGI,FastCGI,PHP-CGI,PHP-FPM
 
-Given two binary trees, write a function to check if they are equal or not.Two binary trees are considered equal if they are structurally identical and the nodes have the same value.Subscri">
-<meta property="og:updated_time" content="2016-12-19T05:35:24.000Z">
+之前研究了下一次完整的Web请求涉及到的过程，今天在学Java的JSP的时候就突然想起来想好好总结一下PHP的CGI有关的知识，之前看过好几遍CGI但是过一段时间总是忘记，又由于重新学习了一遍Web协议，这次再看也许会焕然一新。
+
+CGI出现原因浏览器通过http协议向服务器请求一个资源时，如果这个请求是静态（图片，html，mp3,pdf">
+<meta property="og:updated_time" content="2016-12-21T15:21:26.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="SameTree">
-<meta name="twitter:description" content="Same Tree
+<meta name="twitter:title" content="CGI,FastCGI,PHP-CGI,PHP-FPM重识">
+<meta name="twitter:description" content="CGI,FastCGI,PHP-CGI,PHP-FPM
 
-Given two binary trees, write a function to check if they are equal or not.Two binary trees are considered equal if they are structurally identical and the nodes have the same value.Subscri">
+之前研究了下一次完整的Web请求涉及到的过程，今天在学Java的JSP的时候就突然想起来想好好总结一下PHP的CGI有关的知识，之前看过好几遍CGI但是过一段时间总是忘记，又由于重新学习了一遍Web协议，这次再看也许会焕然一新。
+
+CGI出现原因浏览器通过http协议向服务器请求一个资源时，如果这个请求是静态（图片，html，mp3,pdf">
 
 
 
@@ -120,9 +126,9 @@ Given two binary trees, write a function to check if they are equal or not.Two b
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/12/19/sameTree/"/>
+  <link rel="canonical" href="http://yoursite.com/2016/12/21/关于CGI/"/>
 
-  <title> SameTree | SteveWoo's Tech Blog </title>
+  <title> CGI,FastCGI,PHP-CGI,PHP-FPM重识 | SteveWoo's Tech Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -242,7 +248,7 @@ Given two binary trees, write a function to check if they are equal or not.Two b
             
             
               
-                SameTree
+                CGI,FastCGI,PHP-CGI,PHP-FPM重识
               
             
           </h1>
@@ -254,8 +260,8 @@ Given two binary trees, write a function to check if they are equal or not.Two b
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-19T12:26:45+08:00" content="2016-12-19">
-              2016-12-19
+            <time itemprop="dateCreated" datetime="2016-12-21T23:13:52+08:00" content="2016-12-21">
+              2016-12-21
             </time>
           </span>
 
@@ -268,8 +274,8 @@ Given two binary trees, write a function to check if they are equal or not.Two b
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/C-数据结构/" itemprop="url" rel="index">
-                    <span itemprop="name">C&数据结构</span>
+                  <a href="/categories/协议/" itemprop="url" rel="index">
+                    <span itemprop="name">协议</span>
                   </a>
                 </span>
 
@@ -301,33 +307,29 @@ Given two binary trees, write a function to check if they are equal or not.Two b
       
 
       
-        <h1 id="Same-Tree"><a href="#Same-Tree" class="headerlink" title="Same Tree"></a>Same Tree</h1><hr>
+        <h1 id="CGI-FastCGI-PHP-CGI-PHP-FPM"><a href="#CGI-FastCGI-PHP-CGI-PHP-FPM" class="headerlink" title="CGI,FastCGI,PHP-CGI,PHP-FPM"></a>CGI,FastCGI,PHP-CGI,PHP-FPM</h1><hr>
 <blockquote>
-<p>Given two binary trees, write a function to check if they are equal or not.<br>Two binary trees are considered equal if they are structurally identical and the nodes have the same value.<br>Subscribe to see which companies asked this question</p>
+<p>之前研究了下一次完整的Web请求涉及到的过程，今天在学Java的JSP的时候就突然想起来想好好总结一下PHP的CGI有关的知识，之前看过好几遍CGI但是过一段时间总是忘记，又由于重新学习了一遍Web协议，这次再看也许会焕然一新。</p>
 </blockquote>
-<p>题目就是判断两颗树是不是相同的树。<br>解决思路：依次去判断这棵树的每个节点，是否存在这个节点，每个节点的值是否一样，然后他的子节点是否相同是否遵循以上规则。这就可以用递归来做。<br>时间复杂度O(n),空间复杂度O(logn)</p>
-<pre><code>/**
-     * Definition for a binary tree node.
-     * struct TreeNode {
-     *     int val;
-     *     TreeNode *left;
-     *     TreeNode *right;
-     *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
-     * };
-     */
-    class Solution {
-    public:
-        bool isSameTree(TreeNode* p, TreeNode* q) {
-            if(p == NULL&amp;&amp;q == NULL)
-                return true;
-            if(p == NULL||q == NULL)
-                return false;
-            if(p-&gt;val != q-&gt;val)
-                return false;
-            return isSameTree(p-&gt;left,q-&gt;left)&amp;&amp;isSameTree(p-&gt;right,q-&gt;right);
-        }
-    };
-</code></pre>
+<h3 id="CGI出现原因"><a href="#CGI出现原因" class="headerlink" title="CGI出现原因"></a>CGI出现原因</h3><p>浏览器通过http协议向服务器请求一个资源时，如果这个请求是静态（图片，html，mp3,pdf…）,我们的HTTP<br>Server(Nginx,Apache)能直接根据地址通过HTTP相应（Response）请求。但是我们访问的资源不可能只是静态的，如果是想访问动态的资源时怎么处理呢？Nginx服务器本身是处理不了的，他只能交给（应用服务器）Application Server来处理。但有一个问题Nginx服务器怎么和应用服务器通信呢，大家互相都不认识。为了解决这个问题，CGI就出现了。</p>
+<h3 id="CGI"><a href="#CGI" class="headerlink" title="CGI"></a>CGI</h3><blockquote>
+<p>通用网关接口（Common Gateway Interface/CGI）是一种重要的互联网技术，可以让一个客户端，从网页浏览器向执行在网络服务器上的程序请求数据。CGI描述了服务器和请求处理程序之间传输数据的一种标准。</p>
+</blockquote>
+<p>上面是Wiki上关于CGI的解释，也就是说他是一种协议。<br>我们看下CGI的特点，接着上面的当HTTP Service(nginx，Apache)接收到请求处理index.php的时候，他把这个请求交给了实现了CGI协议的<code>CGI解释器进程</code>，接下来解释器进程会解析php.ini文件，初始化执行环境，然后处理请求，再以规定CGI规定的格式返回处理后的结果，退出进程。下一个请求来时再创建新进程。这里存在一个问题就是当我执行完index.php后我想访问next.php时会重复前面的<code>解析php.ini文件，初始化执行环境</code>而且每次请求的时候他会启动一个进程，当多个请求同时来的时候会同时启动多个进程会给服务器带来压力。<br>综上CGI解释器进程的缺点是做一些重复工作，进程进来执行完后退出，利用率低。为了解决这几个问题出现了新的协议CGI的升级版Fast-CGI</p>
+<h3 id="Fast-CGI"><a href="#Fast-CGI" class="headerlink" title="Fast-CGI"></a>Fast-CGI</h3><p>FastCGI像是一个常驻(long-live)型的CGI，它可以一直执行着，只要激活后，不会每次都要花费时间去fork一次(这是CGI最为人诟病的fork-and-execute 模式)。它还支持分布式的运算, 即 FastCGI 程序可以在网站服务器以外的主机上执行并且接受来自其它网站服务器来的请求。</p>
+<p>FastCGI是语言无关的、可伸缩架构的CGI开放扩展，其主要行为是将CGI解释器进程保持在内存中并因此获得较高的性能。众所周知，CGI解释器的反复加载是CGI性能低下的主要原因，如果CGI解释器保持在内存中并接受FastCGI进程管理器调度，则可以提供良好的性能、伸缩性、Fail- Over特性等等。</p>
+<h3 id="PHP-CGI"><a href="#PHP-CGI" class="headerlink" title="PHP-CGI"></a>PHP-CGI</h3><p>一开始一看名字我以为PHP-CGI是一个实现CGI协议的CGI进程，但其实不是，他是实现了FastCGI协议的进程。PHP-CGI是PHP内置的，PHP本身应该是没有实现CGI协议的进程（因为这个太落后了）。</p>
+<p>PHP-CGI与PHP-FPM一样，也是一个fastcgi进程管理器，PHP-CGI的问题在于 1、PHP-CGI变更php.ini配置后需重启PHP-CGI才能让新的php-ini生效，不可以平滑重启 2、直接杀死php-cgi进程,php就不能运行了。(PHP-FPM和Spawn-FCGI就没有这个问题,守护进程会平滑从新生成新的子进程。） 针对PHP-CGI的不足，PHP-FPM应运而生。</p>
+<h3 id="PHP-FPM"><a href="#PHP-FPM" class="headerlink" title="PHP-FPM"></a>PHP-FPM</h3><p>PHP-FPM是一个PHP FastCGI管理器，是只用于PHP的，使用PHP-FPM来控制PHP-CGI的FastCGI进程，它负责管理一个进程池，来处理来自Web服务器的请求。可以在 <a href="http://php-fpm.org/download" target="_blank" rel="external">http://php-fpm.org/download</a> 下载得到。</p>
+<h4 id="特点："><a href="#特点：" class="headerlink" title="特点："></a>特点：</h4><p>PHP-FPM的使用非常方便，配置都是在PHP-FPM.ini的文件内，而启动、重启都可以从php/sbin/PHP-FPM中进行。更方便的是修改php.ini后可以直接使用PHP-FPM reload进行加载，无需杀掉进程就可以完成php.ini的修改加载。使用PHP-FPM可以使PHP有不小的性能提升。PHP-FPM控制的进程CPU回收的速度比较慢，内存分配的很均匀。</p>
+<p><strong>参考</strong></p>
+<ol>
+<li><a href="http://www.jianshu.com/p/571c474279af" target="_blank" rel="external">WEB请求处理三涉及到CGI部分
+</a></li>
+<li><a href="https://segmentfault.com/q/1010000000256516" target="_blank" rel="external">segmentfault尹川的回答
+</a></li>
+</ol>
+
       
     </div>
 
@@ -347,28 +349,18 @@ Given two binary trees, write a function to check if they are equal or not.Two b
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/leetcode/" rel="tag">#leetcode</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/05/C-12-5/" rel="next" title="指针实现二维数组">
-                <i class="fa fa-chevron-left"></i> 指针实现二维数组
+              <a href="/2016/12/19/sameTree/" rel="next" title="SameTree">
+                <i class="fa fa-chevron-left"></i> SameTree
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/12/21/关于CGI/" rel="prev" title="CGI,FastCGI,PHP-CGI,PHP-FPM重识">
-                CGI,FastCGI,PHP-CGI,PHP-FPM重识 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -482,7 +474,7 @@ Given two binary trees, write a function to check if they are equal or not.Two b
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Same-Tree"><span class="nav-number">1.</span> <span class="nav-text">Same Tree</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CGI-FastCGI-PHP-CGI-PHP-FPM"><span class="nav-number">1.</span> <span class="nav-text">CGI,FastCGI,PHP-CGI,PHP-FPM</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#CGI出现原因"><span class="nav-number">1.0.1.</span> <span class="nav-text">CGI出现原因</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#CGI"><span class="nav-number">1.0.2.</span> <span class="nav-text">CGI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Fast-CGI"><span class="nav-number">1.0.3.</span> <span class="nav-text">Fast-CGI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP-CGI"><span class="nav-number">1.0.4.</span> <span class="nav-text">PHP-CGI</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#PHP-FPM"><span class="nav-number">1.0.5.</span> <span class="nav-text">PHP-FPM</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#特点："><span class="nav-number">1.0.5.1.</span> <span class="nav-text">特点：</span></a></li></ol></li></ol></li></ol></li></ol></div>
             
           </div>
         </section>
