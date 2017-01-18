@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="leetcode," />
 
 
 
@@ -84,22 +84,58 @@
 
 
 
-<meta name="description" content="由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。
+<meta name="description" content="Invert a binary tree.
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+to
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+Trivia:This problem was inspired by this original tweet by Max Howell:
 
-  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮">
+Googl">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新家">
-<meta property="og:url" content="http://yoursite.com/2016/10/04/新家/index.html">
+<meta property="og:title" content="invert_tree">
+<meta property="og:url" content="http://yoursite.com/2017/01/18/invert-tree/index.html">
 <meta property="og:site_name" content="SteveWoo's Tech Blog">
-<meta property="og:description" content="由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。
+<meta property="og:description" content="Invert a binary tree.
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+to
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+Trivia:This problem was inspired by this original tweet by Max Howell:
 
-  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮">
-<meta property="og:updated_time" content="2016-10-04T07:51:24.000Z">
+Googl">
+<meta property="og:updated_time" content="2017-01-18T08:24:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="新家">
-<meta name="twitter:description" content="由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。
+<meta name="twitter:title" content="invert_tree">
+<meta name="twitter:description" content="Invert a binary tree.
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+to
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+Trivia:This problem was inspired by this original tweet by Max Howell:
 
-  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮">
+Googl">
 
 
 
@@ -127,13 +163,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/10/04/新家/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/01/18/invert-tree/"/>
 
 
 
 
 
-  <title> 新家 | SteveWoo's Tech Blog </title>
+  <title> invert_tree | SteveWoo's Tech Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +302,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/10/04/新家/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/18/invert-tree/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="SteveWoo">
@@ -290,7 +326,7 @@
             
             
               
-                新家
+                invert_tree
               
             
           </h1>
@@ -305,8 +341,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-10-04T15:40:36+08:00">
-                2016-10-04
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-18T16:22:16+08:00">
+                2017-01-18
               </time>
             
 
@@ -324,8 +360,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/10/04/新家/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/10/04/新家/" itemprop="commentCount"></span>
+                <a href="/2017/01/18/invert-tree/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/18/invert-tree/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -351,11 +387,24 @@
       
 
       
-        <blockquote>
-<p>由于阿里云太坑了，原本想一直用着阿里的那个学生服务器，可是后来阿里强行要求签到10天才能发抵用券，我索性就放弃治疗了。还好，腾讯还算厚道，我那个测试论坛现在还跑在腾讯的服务器上，每个月只是象征性地收一块钱，速度还比阿里的签到10天还要10快的服务器好多了。</p>
+        <p>Invert a binary tree.</p>
+<pre><code>     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+</code></pre><p>to</p>
+<pre><code>     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+</code></pre><p>Trivia:<br>This problem was inspired by this original tweet by Max Howell:</p>
+<blockquote>
+<p>Google: 90% of our engineers use the software you wrote (Homebrew),<br>but you can’t invert a binary tree on a whiteboard so fuck off.</p>
 </blockquote>
-<p>  从同事那听说 他有用github page 效果还蛮好，关键是我再也不用担心服务器续费问题了，这里以后就是记录我程序员生涯的地方了，蛮好。😊</p>
-<p>这里主要还是写点PHP，C，数据结构，设计模式这类东西，希望对自己有点作用。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">Subscribe to see which companies asked this question</div><div class="line">/**</div><div class="line"> * Definition for a binary tree node.</div><div class="line"> * struct TreeNode &#123;</div><div class="line"> *     int val;</div><div class="line"> *     TreeNode *left;</div><div class="line"> *     TreeNode *right;</div><div class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</div><div class="line"> * &#125;;</div><div class="line"> */</div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    TreeNode* invertTree(TreeNode* root) &#123;</div><div class="line">        if(root == NULL)</div><div class="line">            return NULL;</div><div class="line">        root-&gt;left =  invertTree(root-&gt;left);</div><div class="line">        root-&gt;right =  invertTree(root-&gt;right);</div><div class="line">        TreeNode *tmp = root-&gt;left;</div><div class="line">        root-&gt;left = root-&gt;right;</div><div class="line">        root-&gt;right = tmp;</div><div class="line">        return root;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+<p><strong>这到题目不难，主要用了递归的思想，反转二叉树就是每个节点下的左右儿子，我们需要从他的最下面开始反转，这里用递归就很合适。</strong></p>
 
       
     </div>
@@ -398,10 +447,20 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
+          
+        </div>
+      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/08/binary-tree/" rel="next" title="二叉树的一些特点">
+                <i class="fa fa-chevron-left"></i> 二叉树的一些特点
+              </a>
             
           </div>
 
@@ -409,8 +468,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2016/10/28/后期静态绑定解读/" rel="prev" title="后期静态绑定解读">
-                后期静态绑定解读 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/01/18/max-depth-tree/" rel="prev" title="max_depth_tree">
+                max_depth_tree <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -437,8 +496,8 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/10/04/新家/"
-           data-title="新家" data-url="http://yoursite.com/2016/10/04/新家/">
+      <div class="ds-thread" data-thread-key="2017/01/18/invert-tree/"
+           data-title="invert_tree" data-url="http://yoursite.com/2017/01/18/invert-tree/">
       </div>
     
   </div>
