@@ -84,19 +84,16 @@
 
 
 
-<meta name="description" content="判断是否是平衡二叉树
-QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submissions: 408360Difficulty: EasyContributors: AdminGiven a binary tree, determine if it is height-balanced.For this">
+<meta name="description" content="Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.Basically, the deletion can be divided into">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Balanced_Binary_Tree">
-<meta property="og:url" content="http://yoursite.com/2016/12/25/Balanced-Binary-Tree/index.html">
+<meta property="og:title" content="Delete_node_in_bst">
+<meta property="og:url" content="http://yoursite.com/2017/02/06/Delete-node-in-bst/index.html">
 <meta property="og:site_name" content="SteveWoo's Tech Blog">
-<meta property="og:description" content="判断是否是平衡二叉树
-QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submissions: 408360Difficulty: EasyContributors: AdminGiven a binary tree, determine if it is height-balanced.For this">
-<meta property="og:updated_time" content="2017-01-18T08:58:10.000Z">
+<meta property="og:description" content="Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.Basically, the deletion can be divided into">
+<meta property="og:updated_time" content="2017-02-06T12:29:16.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Balanced_Binary_Tree">
-<meta name="twitter:description" content="判断是否是平衡二叉树
-QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submissions: 408360Difficulty: EasyContributors: AdminGiven a binary tree, determine if it is height-balanced.For this">
+<meta name="twitter:title" content="Delete_node_in_bst">
+<meta name="twitter:description" content="Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.Basically, the deletion can be divided into">
 
 
 
@@ -124,13 +121,13 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/12/25/Balanced-Binary-Tree/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/06/Delete-node-in-bst/"/>
 
 
 
 
 
-  <title> Balanced_Binary_Tree | SteveWoo's Tech Blog </title>
+  <title> Delete_node_in_bst | SteveWoo's Tech Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -263,7 +260,7 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/12/25/Balanced-Binary-Tree/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/06/Delete-node-in-bst/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="SteveWoo">
@@ -287,7 +284,7 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
             
             
               
-                Balanced_Binary_Tree
+                Delete_node_in_bst
               
             
           </h1>
@@ -302,8 +299,8 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2016-12-25T18:15:38+08:00">
-                2016-12-25
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-06T20:26:50+08:00">
+                2017-02-06
               </time>
             
 
@@ -313,28 +310,6 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/leetcode/" itemprop="url" rel="index">
-                    <span itemprop="name">leetcode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -343,8 +318,8 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2016/12/25/Balanced-Binary-Tree/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/25/Balanced-Binary-Tree/" itemprop="commentCount"></span>
+                <a href="/2017/02/06/Delete-node-in-bst/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/06/Delete-node-in-bst/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -370,13 +345,41 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
       
 
       
-        <h1 id="判断是否是平衡二叉树"><a href="#判断是否是平衡二叉树" class="headerlink" title="判断是否是平衡二叉树"></a>判断是否是平衡二叉树</h1><blockquote>
-<p>QuestionEditorial Solution  My Submissions<br>Total Accepted: 147366<br>Total Submissions: 408360<br>Difficulty: Easy<br>Contributors: Admin<br>Given a binary tree, determine if it is height-balanced.<br>For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.<br>Subscribe to see which companies asked this question</p>
+        <blockquote>
+<p>Given a root node reference of a BST and a key, delete the node with the given key in the BST. Return the root node reference (possibly updated) of the BST.<br>Basically, the deletion can be divided into two stages:<br>Search for a node to remove.<br>If the node is found, delete the node.<br>Note: Time complexity should be O(height of tree).</p>
 </blockquote>
-<p><strong>平衡二叉树：它是一 棵空树或它的左右两个子树的高度差的绝对值不超过1，并且左右两个子树都是一棵平衡二叉树。</strong><br>如何解决这道题目一个思路就是按照递归的思路去做。先去判读根节点的左右两边的深度差是否大于1，小于的话再去判断他的子树是否为平衡二叉树。这里就要借助递归。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">class Solution &#123;</div><div class="line">    public:</div><div class="line">        bool isBalanced(TreeNode* root) &#123;</div><div class="line">            if(root == NULL)</div><div class="line">                return true;</div><div class="line">            if(root-&gt;left == NULL&amp;&amp;root-&gt;right == NULL)</div><div class="line">                return true;</div><div class="line">            if(abs(depth(root-&gt;left)-depth(root-&gt;right))&gt;1)</div><div class="line">                return false;</div><div class="line">            return isBalanced(root-&gt;left)&amp;&amp;isBalanced(root-&gt;right);</div><div class="line">        &#125;</div><div class="line">        int depth(TreeNode* root)&#123;</div><div class="line">            if(root == NULL)</div><div class="line">                return 0;</div><div class="line">            return max(1+depth(root-&gt;left),1+depth(root-&gt;right));</div><div class="line">        &#125;</div><div class="line">    &#125;;</div></pre></td></tr></table></figure>
-<p>一开始我觉得这种算法很顺手的，思考的时候也很简单。但是我后来在leetcode上测了下时间有快20ms，就觉得有问题，原来一看这里又两层递归就是递归里面套递归，所以花费时间很长时间在这里面。<br>这种算法的时间复杂度为nlogn所以大量时间花费在了算书的深度上。<br>然后上网查了下有如下的算法：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    bool isBalanced(TreeNode* root) &#123;</div><div class="line">        // write code here</div><div class="line">        int high=0;</div><div class="line">        return isBalance1(root,high);</div><div class="line">    &#125;</div><div class="line">    bool isBalance1(TreeNode* root,int &amp;high)</div><div class="line">    &#123;</div><div class="line">        if(root==NULL)</div><div class="line">        &#123;</div><div class="line">            high=0;</div><div class="line">            return true;</div><div class="line">        &#125;</div><div class="line">        int lhigh,rhigh;</div><div class="line">        if(!isBalance1(root-&gt;left,lhigh)||!isBalance1(root-&gt;right,rhigh))</div><div class="line">            return false;</div><div class="line">        if(lhigh-rhigh&gt;1||lhigh-rhigh&lt;-1)</div><div class="line">            return false;</div><div class="line">        high=(lhigh&gt;=rhigh?lhigh:rhigh)+1;</div><div class="line">        return true;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
-<p><strong>这种算法就用了一层递归，高度的递归在算平衡里面已经解决了，所以速度要比上面的要快。</strong></p>
+<pre><code>root = [5,3,6,2,4,null,7]
+key = 3
+
+    5
+   / \
+  3   6
+ / \   \
+2   4   7
+
+Given key to delete is 3. So we find the node with value 3 and delete it.
+
+One valid answer is [5,4,6,2,null,null,7], shown in the following BST.
+
+    5
+   / \
+  4   6
+ /     \
+2       7
+
+Another valid answer is [5,2,6,null,4,null,7].
+
+    5
+   / \
+  2   6
+   \   \
+    4   7
+</code></pre><h3 id="解析"><a href="#解析" class="headerlink" title="解析"></a>解析</h3><p>这道题目重点分以下几种情况去分析</p>
+<ol>
+<li>如果要删除的那个节点存在，且他的左右子树不都存在。那就直接用子树去替代被删除的节点。</li>
+<li>如果要删除的节点左右子树都存在的话，正如上面所示的其实有两种解决方案，一种就是拿右子树的最小值去替代，另外一种就是拿左子树的最大值去替代。替代完之后又要删除替代的那个节点（这里逻辑就可以套用1去解决）。<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * Definition for a binary tree node.</div><div class="line"> * struct TreeNode &#123;</div><div class="line"> *     int val;</div><div class="line"> *     TreeNode *left;</div><div class="line"> *     TreeNode *right;</div><div class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</div><div class="line"> * &#125;;</div><div class="line"> */</div><div class="line"><span class="keyword">class</span> Solution &#123;</div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function">TreeNode* <span class="title">deleteNode</span><span class="params">(TreeNode* root, <span class="keyword">int</span> key)</span> </span>&#123;</div><div class="line">        <span class="keyword">if</span>(!root) <span class="keyword">return</span> <span class="literal">NULL</span>;</div><div class="line">        <span class="comment">//搜索那个要删除的节点</span></div><div class="line">        <span class="keyword">if</span>(key &lt; root-&gt;val)&#123;</div><div class="line">            <span class="comment">//在左子树搜</span></div><div class="line">            root-&gt;left = deleteNode(root-&gt;left,key);</div><div class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(key &gt; root-&gt;val)&#123;</div><div class="line">            <span class="comment">//在右子树搜</span></div><div class="line">            root-&gt;right = deleteNode(root-&gt;right,key);</div><div class="line">            </div><div class="line">        &#125; <span class="keyword">else</span> &#123;</div><div class="line">            <span class="comment">//找到删除节点，而且左右子树只存在一个以下。</span></div><div class="line">            <span class="keyword">if</span>(!root-&gt;left||!root-&gt;right)&#123;</div><div class="line">                root = (root-&gt;left) ? root-&gt;left : root-&gt;right;</div><div class="line">            &#125;<span class="keyword">else</span>&#123;</div><div class="line">            <span class="comment">//左右子树都存在</span></div><div class="line">                TreeNode* cur;</div><div class="line">                cur = root-&gt;right;</div><div class="line">                <span class="keyword">while</span>(cur-&gt;left)&#123;</div><div class="line">                    cur = cur-&gt;left ;</div><div class="line">                &#125;</div><div class="line">                root-&gt;val = cur-&gt;val;</div><div class="line">            <span class="comment">//删除右子树下用来替换的节点。</span></div><div class="line">                root-&gt;right = deleteNode(root-&gt;right,cur-&gt;val);</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        <span class="keyword">return</span> root;    </div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+</ol>
 
       
     </div>
@@ -430,8 +433,8 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/24/网络之间的连接/" rel="next" title="网络之间的连接">
-                <i class="fa fa-chevron-left"></i> 网络之间的连接
+              <a href="/2017/01/25/重新构建二叉树/" rel="next" title="重新构建二叉树">
+                <i class="fa fa-chevron-left"></i> 重新构建二叉树
               </a>
             
           </div>
@@ -439,10 +442,6 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/08/path-sum-III/" rel="prev" title="path_sum_III">
-                path_sum_III <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -468,8 +467,8 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/25/Balanced-Binary-Tree/"
-           data-title="Balanced_Binary_Tree" data-url="http://yoursite.com/2016/12/25/Balanced-Binary-Tree/">
+      <div class="ds-thread" data-thread-key="2017/02/06/Delete-node-in-bst/"
+           data-title="Delete_node_in_bst" data-url="http://yoursite.com/2017/02/06/Delete-node-in-bst/">
       </div>
     
   </div>
@@ -598,7 +597,7 @@ QuestionEditorial Solution  My SubmissionsTotal Accepted: 147366Total Submission
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#判断是否是平衡二叉树"><span class="nav-number">1.</span> <span class="nav-text">判断是否是平衡二叉树</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#解析"><span class="nav-number">1.</span> <span class="nav-text">解析</span></a></li></ol></div>
             
 
           </div>
