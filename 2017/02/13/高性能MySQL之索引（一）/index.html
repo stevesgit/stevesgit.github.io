@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="leetcode," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,19 +84,33 @@
 
 
 
-<meta name="description" content="Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
-According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between t">
+<meta name="description" content="这篇文章来自于对《高性能MySQL》的总结
+
+索引（在mysql中叫做“key”）是存储引擎用于快速找到记录的一种数据结构。
+
+索引基础就像看书一样，我们想要找我们想看的内容都会翻到书的目录，找到对应的章节。这里的目录就是现实生活中的索引。在mysql中，在存储引擎用类似的方式使用索引，其先在索引中找到对应值，然后根据匹配的索引记录找到对应的数据行。
+索引的类型Mysql索引的类型有B-Tree索">
 <meta property="og:type" content="article">
-<meta property="og:title" content="lca_of_bst">
-<meta property="og:url" content="http://yoursite.com/2017/01/18/LCA-Of-BST/index.html">
+<meta property="og:title" content="高性能MySQL之索引（一）">
+<meta property="og:url" content="http://yoursite.com/2017/02/13/高性能MySQL之索引（一）/index.html">
 <meta property="og:site_name" content="SteveWoo's Tech Blog">
-<meta property="og:description" content="Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
-According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between t">
-<meta property="og:updated_time" content="2017-01-18T08:58:52.000Z">
+<meta property="og:description" content="这篇文章来自于对《高性能MySQL》的总结
+
+索引（在mysql中叫做“key”）是存储引擎用于快速找到记录的一种数据结构。
+
+索引基础就像看书一样，我们想要找我们想看的内容都会翻到书的目录，找到对应的章节。这里的目录就是现实生活中的索引。在mysql中，在存储引擎用类似的方式使用索引，其先在索引中找到对应值，然后根据匹配的索引记录找到对应的数据行。
+索引的类型Mysql索引的类型有B-Tree索">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/7503dc51gy1fcoo7uy3rnj20rh0c7ab2.jpg">
+<meta property="og:updated_time" content="2017-02-13T04:51:10.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="lca_of_bst">
-<meta name="twitter:description" content="Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
-According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between t">
+<meta name="twitter:title" content="高性能MySQL之索引（一）">
+<meta name="twitter:description" content="这篇文章来自于对《高性能MySQL》的总结
+
+索引（在mysql中叫做“key”）是存储引擎用于快速找到记录的一种数据结构。
+
+索引基础就像看书一样，我们想要找我们想看的内容都会翻到书的目录，找到对应的章节。这里的目录就是现实生活中的索引。在mysql中，在存储引擎用类似的方式使用索引，其先在索引中找到对应值，然后根据匹配的索引记录找到对应的数据行。
+索引的类型Mysql索引的类型有B-Tree索">
+<meta name="twitter:image" content="http://wx2.sinaimg.cn/mw690/7503dc51gy1fcoo7uy3rnj20rh0c7ab2.jpg">
 
 
 
@@ -124,13 +138,13 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/18/LCA-Of-BST/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/02/13/高性能MySQL之索引（一）/"/>
 
 
 
 
 
-  <title> lca_of_bst | SteveWoo's Tech Blog </title>
+  <title> 高性能MySQL之索引（一） | SteveWoo's Tech Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -263,7 +277,7 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/18/LCA-Of-BST/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/13/高性能MySQL之索引（一）/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="SteveWoo">
@@ -287,7 +301,7 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
             
             
               
-                lca_of_bst
+                高性能MySQL之索引（一）
               
             
           </h1>
@@ -302,8 +316,8 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-18T16:35:04+08:00">
-                2017-01-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-02-13T12:47:11+08:00">
+                2017-02-13
               </time>
             
 
@@ -325,8 +339,8 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/leetcode/" itemprop="url" rel="index">
-                    <span itemprop="name">leetcode</span>
+                  <a href="/categories/MySQL/" itemprop="url" rel="index">
+                    <span itemprop="name">MySQL</span>
                   </a>
                 </span>
 
@@ -343,8 +357,8 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/01/18/LCA-Of-BST/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/18/LCA-Of-BST/" itemprop="commentCount"></span>
+                <a href="/2017/02/13/高性能MySQL之索引（一）/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/13/高性能MySQL之索引（一）/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -370,25 +384,27 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
       
 
       
-        <p>Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.</p>
-<p>According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”</p>
-<pre><code>     _______6______
-    /              \
- ___2__          ___8__
-/      \        /      \
-0      _4       7       9
-      /  \
-      3   5
-</code></pre><p>For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.</p>
-<p>意思就是找俩个节点的共同祖先。<br>这是一颗二叉搜索树，解决思路就比较简答。输入参数是根节点和找共同祖先的两个节点。我们就可以让两个节点和root节点做比较。有以下几种情况：</p>
-<ol>
-<li>两个节点中一个比根节点大，另一个比根节点小。那么他们的祖先就是root。</li>
-<li>两个节点有一个节点等于根节点，那么很显然他们的祖先就是root。</li>
-<li>两个节点都比root节点大，那么缩小两个几点的搜索范围，到root的右子树中，然后再和root-&gt;right 做比较。</li>
-<li>同理，两个节点都比root的节点小，到root的左子树做比较。</li>
-</ol>
-<p>代码如下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * Definition for a binary tree node.</div><div class="line"> * struct TreeNode &#123;</div><div class="line"> *     int val;</div><div class="line"> *     TreeNode *left;</div><div class="line"> *     TreeNode *right;</div><div class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</div><div class="line"> * &#125;;</div><div class="line"> */</div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) &#123;</div><div class="line">        if((root-&gt;val &gt; p-&gt;val &amp;&amp; root-&gt;val&lt; q-&gt;val) ||(root-&gt;val &lt; p-&gt;val &amp;&amp; root-&gt;val&gt; q-&gt;val))</div><div class="line">            return root;</div><div class="line">        if(root-&gt;val == p-&gt;val ||root-&gt;val== q-&gt;val)</div><div class="line">            return root;</div><div class="line">        if(root-&gt;val&gt;p-&gt;val&amp;&amp;root-&gt;val&gt;q-&gt;val)</div><div class="line">            return lowestCommonAncestor(root-&gt;left,p,q);</div><div class="line">        if(root-&gt;val&lt;p-&gt;val&amp;&amp;root-&gt;val&lt;q-&gt;val)</div><div class="line">            return lowestCommonAncestor(root-&gt;right,p,q);</div><div class="line">      </div><div class="line">        </div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+        <p>这篇文章来自于对《高性能MySQL》的总结</p>
+<blockquote>
+<p>索引（在mysql中叫做“key”）是存储引擎用于快速找到记录的一种数据结构。</p>
+</blockquote>
+<h2 id="索引基础"><a href="#索引基础" class="headerlink" title="索引基础"></a>索引基础</h2><p>就像看书一样，我们想要找我们想看的内容都会翻到书的目录，找到对应的章节。这里的目录就是现实生活中的索引。<br>在mysql中，在存储引擎用类似的方式使用索引，其先在索引中找到对应值，然后根据匹配的索引记录找到对应的数据行。</p>
+<h2 id="索引的类型"><a href="#索引的类型" class="headerlink" title="索引的类型"></a>索引的类型</h2><p>Mysql索引的类型有B-Tree索引，哈希索引，空间数据索引（R-Tree），全文索引。</p>
+<h3 id="Btree索引"><a href="#Btree索引" class="headerlink" title="Btree索引"></a>Btree索引</h3><blockquote>
+<p>当人们谈论索引的时候，如果没有特别指明类型，多半说的就是B-Tree数据结构来存储数据。大多数Mysql引擎都支持这种索引.Archive引擎是一个例外：5.1之前Archive不支持任何索引，直到5.1才开始支持单个自增列（AUTO_INCREMENT）的索引。<br>我们使用的术语“B-Tree”,是因为在MySQL在Create Table和其他语句中也使用该关键字。不过底层的存储引擎也可能使用不同的存储结构，例如NDB集群存储引擎内部实际上使用了T-Tree结构存储这种引擎，即使其名字是BTREE；Innodb则使用B+Tree，各种数据结构和算法的变种不在本讨论范围之内。</p>
+</blockquote>
+<p><img src="http://wx2.sinaimg.cn/mw690/7503dc51gy1fcoo7uy3rnj20rh0c7ab2.jpg" alt="B-Tree结构"><br>建立在B-Tree树上的索引（技术上是B+Tree）<br>B-Tree索引能够加快访问数据的速度，因为存储引擎不再需要进行全表扫描来获取需要的数据，取而代之的是从索引的根节点（图示并未画出）开始进行搜索。根节点槽中存放了指向子节点的指针，存储引擎根据这些指向下层查找。通过比较节点页的值和要查找的值可以找到合适的指针进入下层子节点，这些指针实际上定义了子节点页中值的上限和下限。最终存储引擎要么是找到对应的值，要么该记录不存在。<br>叶子节点页比较特别，它们的指针指向的是被索引的数据，而不是其他的节点页。</p>
+<h3 id="索引有效查询方式"><a href="#索引有效查询方式" class="headerlink" title="索引有效查询方式"></a>索引有效查询方式</h3><h4 id="全值匹配"><a href="#全值匹配" class="headerlink" title="全值匹配"></a>全值匹配</h4><p>全值匹配指的是和索引中的所有列进行匹配，例如前面提到的索引可用于查找姓名为Cuba Allen，出生于1960-01-01的人。</p>
+<h4 id="匹配最左前缀"><a href="#匹配最左前缀" class="headerlink" title="匹配最左前缀"></a>匹配最左前缀</h4><p>前面提到的索引可用于查找所有姓为Allen的人，即只使用索引的第一列。</p>
+<h4 id="匹配范围值"><a href="#匹配范围值" class="headerlink" title="匹配范围值"></a>匹配范围值</h4><p>例如前面提到的索引可以用于查找姓在Allen和Barrymore之间的人。这里只使用了索引的第一列。</p>
+<h4 id="精确匹配某一列并范围匹配另外一列"><a href="#精确匹配某一列并范围匹配另外一列" class="headerlink" title="精确匹配某一列并范围匹配另外一列"></a>精确匹配某一列并范围匹配另外一列</h4><p>前面提到的索引也可用于查找所有姓为Allen，并且名字是字母K开头（比如Kim,Karl等）的人。即第一列last_name全匹配，第二列first_name范围匹配。</p>
+<h4 id="只访问索引的查询"><a href="#只访问索引的查询" class="headerlink" title="只访问索引的查询"></a>只访问索引的查询</h4><p>B-Tree通常可以支持“只访问索引的查询”，即查询只需要访问索引，而无需访问数据行。这种方式叫做“覆盖索引”。</p>
+<h2 id="索引的限制"><a href="#索引的限制" class="headerlink" title="索引的限制"></a>索引的限制</h2><ul>
+<li>如果不是按照索引的最左列开始查询，则无法使用索引。</li>
+<li>不能跳过索引中的列。</li>
+<li>如果查询中有某个列的范围查询，则其右边所有列都无法使用索引优化查找。</li>
+</ul>
+<p>总结：索引列的顺序是很重要的，这些限制都和索引列的顺序有关。在优化性能的时候，可能需要使用相同的列但顺序不同的索引来满足不同类型的查询需求。</p>
 
       
     </div>
@@ -431,19 +447,13 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/18/max-depth-tree/" rel="next" title="max_depth_tree">
-                <i class="fa fa-chevron-left"></i> max_depth_tree
+              <a href="/2017/02/06/Sum-to-leaf-numbers/" rel="next" title="Sum_to_leaf_numbers">
+                <i class="fa fa-chevron-left"></i> Sum_to_leaf_numbers
               </a>
             
           </div>
@@ -451,10 +461,6 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/18/适配器模式/" rel="prev" title="适配器模式">
-                适配器模式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -480,8 +486,8 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/01/18/LCA-Of-BST/"
-           data-title="lca_of_bst" data-url="http://yoursite.com/2017/01/18/LCA-Of-BST/">
+      <div class="ds-thread" data-thread-key="2017/02/13/高性能MySQL之索引（一）/"
+           data-title="高性能MySQL之索引（一）" data-url="http://yoursite.com/2017/02/13/高性能MySQL之索引（一）/">
       </div>
     
   </div>
@@ -505,8 +511,17 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -591,6 +606,22 @@ According to the definition of LCA on Wikipedia: “The lowest common ancestor i
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#索引基础"><span class="nav-number">1.</span> <span class="nav-text">索引基础</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#索引的类型"><span class="nav-number">2.</span> <span class="nav-text">索引的类型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Btree索引"><span class="nav-number">2.1.</span> <span class="nav-text">Btree索引</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#索引有效查询方式"><span class="nav-number">2.2.</span> <span class="nav-text">索引有效查询方式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#全值匹配"><span class="nav-number">2.2.1.</span> <span class="nav-text">全值匹配</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#匹配最左前缀"><span class="nav-number">2.2.2.</span> <span class="nav-text">匹配最左前缀</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#匹配范围值"><span class="nav-number">2.2.3.</span> <span class="nav-text">匹配范围值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#精确匹配某一列并范围匹配另外一列"><span class="nav-number">2.2.4.</span> <span class="nav-text">精确匹配某一列并范围匹配另外一列</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#只访问索引的查询"><span class="nav-number">2.2.5.</span> <span class="nav-text">只访问索引的查询</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#索引的限制"><span class="nav-number">3.</span> <span class="nav-text">索引的限制</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
