@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="leetcode," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -84,22 +84,25 @@
 
 
 
-<meta name="description" content="Given a binary tree, find its maximum depth.
-The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
-Subscribe to see which companies asked t">
+<meta name="description" content="一开始看《聊聊架构》这本书有点懵的，因为觉得架构就是软件架构，里面提到一些生命周期，听上去学术，但实际上是很有道理的，架构是无处不在的，这里我会总接一些觉得还不错篇章，也作为一次读书笔记吧。
+
+什么是代码先看一张图上面的方形可以理解为软件，结合我自己的编程经验，这就是一个典型的后端软件模型。这里可以把代码分为三部分：1.访问业务生命周期的代码2.业务逻辑代码。3.存储部分代码上图的服务就是访问业">
 <meta property="og:type" content="article">
-<meta property="og:title" content="max_depth_tree">
-<meta property="og:url" content="http://yoursite.com/2017/01/18/max-depth-tree/index.html">
+<meta property="og:title" content="聊聊架构之如何写好代码（1）">
+<meta property="og:url" content="http://yoursite.com/2017/07/16/如何写好代码1/index.html">
 <meta property="og:site_name" content="SteveWoo's Tech Blog">
-<meta property="og:description" content="Given a binary tree, find its maximum depth.
-The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
-Subscribe to see which companies asked t">
-<meta property="og:updated_time" content="2017-01-18T08:59:00.000Z">
+<meta property="og:description" content="一开始看《聊聊架构》这本书有点懵的，因为觉得架构就是软件架构，里面提到一些生命周期，听上去学术，但实际上是很有道理的，架构是无处不在的，这里我会总接一些觉得还不错篇章，也作为一次读书笔记吧。
+
+什么是代码先看一张图上面的方形可以理解为软件，结合我自己的编程经验，这就是一个典型的后端软件模型。这里可以把代码分为三部分：1.访问业务生命周期的代码2.业务逻辑代码。3.存储部分代码上图的服务就是访问业">
+<meta property="og:image" content="http://wx3.sinaimg.cn/mw690/7503dc51ly1fhlh1lscukj20rt0qp42y.jpg">
+<meta property="og:image" content="http://wx2.sinaimg.cn/mw690/7503dc51ly1fhlna4t4n0j20qo0rjafe.jpg">
+<meta property="og:updated_time" content="2017-07-16T05:52:01.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="max_depth_tree">
-<meta name="twitter:description" content="Given a binary tree, find its maximum depth.
-The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.
-Subscribe to see which companies asked t">
+<meta name="twitter:title" content="聊聊架构之如何写好代码（1）">
+<meta name="twitter:description" content="一开始看《聊聊架构》这本书有点懵的，因为觉得架构就是软件架构，里面提到一些生命周期，听上去学术，但实际上是很有道理的，架构是无处不在的，这里我会总接一些觉得还不错篇章，也作为一次读书笔记吧。
+
+什么是代码先看一张图上面的方形可以理解为软件，结合我自己的编程经验，这就是一个典型的后端软件模型。这里可以把代码分为三部分：1.访问业务生命周期的代码2.业务逻辑代码。3.存储部分代码上图的服务就是访问业">
+<meta name="twitter:image" content="http://wx3.sinaimg.cn/mw690/7503dc51ly1fhlh1lscukj20rt0qp42y.jpg">
 
 
 
@@ -127,13 +130,13 @@ Subscribe to see which companies asked t">
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/01/18/max-depth-tree/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/07/16/如何写好代码1/"/>
 
 
 
 
 
-  <title> max_depth_tree | SteveWoo's Tech Blog </title>
+  <title> 聊聊架构之如何写好代码（1） | SteveWoo's Tech Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -266,7 +269,7 @@ Subscribe to see which companies asked t">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/01/18/max-depth-tree/">
+  <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/16/如何写好代码1/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="SteveWoo">
@@ -290,7 +293,7 @@ Subscribe to see which companies asked t">
             
             
               
-                max_depth_tree
+                聊聊架构之如何写好代码（1）
               
             
           </h1>
@@ -305,8 +308,8 @@ Subscribe to see which companies asked t">
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-01-18T16:28:28+08:00">
-                2017-01-18
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-07-16T13:49:46+08:00">
+                2017-07-16
               </time>
             
 
@@ -328,8 +331,8 @@ Subscribe to see which companies asked t">
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/leetcode/" itemprop="url" rel="index">
-                    <span itemprop="name">leetcode</span>
+                  <a href="/categories/聊聊架构/" itemprop="url" rel="index">
+                    <span itemprop="name">聊聊架构</span>
                   </a>
                 </span>
 
@@ -346,8 +349,8 @@ Subscribe to see which companies asked t">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/01/18/max-depth-tree/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/01/18/max-depth-tree/" itemprop="commentCount"></span>
+                <a href="/2017/07/16/如何写好代码1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/07/16/如何写好代码1/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -373,11 +376,27 @@ Subscribe to see which companies asked t">
       
 
       
-        <p>Given a binary tree, find its maximum depth.</p>
-<p>The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>
-<p>Subscribe to see which companies asked this question</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">/**</div><div class="line"> * Definition for a binary tree node.</div><div class="line"> * struct TreeNode &#123;</div><div class="line"> *     int val;</div><div class="line"> *     TreeNode *left;</div><div class="line"> *     TreeNode *right;</div><div class="line"> *     TreeNode(int x) : val(x), left(NULL), right(NULL) &#123;&#125;</div><div class="line"> * &#125;;</div><div class="line"> */</div><div class="line">class Solution &#123;</div><div class="line">public:</div><div class="line">    int maxDepth(TreeNode* root) &#123;</div><div class="line">        if(root == NULL)</div><div class="line">            return 0;</div><div class="line">        return max(1+maxDepth(root-&gt;left),1+maxDepth(root-&gt;right));</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
-<p>这道题目就是不断的递归左右子树，父的深度比儿子深度大1，左右儿子深度做比较，得出最大深度。<br><strong>可以看出递归思想在解决树问题的重要性。</strong></p>
+        <blockquote>
+<p>一开始看《聊聊架构》这本书有点懵的，因为觉得架构就是软件架构，里面提到一些生命周期，听上去学术，但实际上是很有道理的，架构是无处不在的，这里我会总接一些觉得还不错篇章，也作为一次读书笔记吧。</p>
+</blockquote>
+<h2 id="什么是代码"><a href="#什么是代码" class="headerlink" title="什么是代码"></a>什么是代码</h2><p>先看一张图<img src="http://wx3.sinaimg.cn/mw690/7503dc51ly1fhlh1lscukj20rt0qp42y.jpg" alt="image"><br>上面的方形可以理解为软件，结合我自己的编程经验，这就是一个典型的后端软件模型。<br>这里可以把代码分为三部分：1.访问业务生命周期的代码2.业务逻辑代码。3.存储部分代码<br>上图的服务就是访问业务生命周期的代码，业务逻辑就是业务。</p>
+<h2 id="那什么又是服务呢？"><a href="#那什么又是服务呢？" class="headerlink" title="那什么又是服务呢？"></a>那什么又是服务呢？</h2><p>书里的一个例子很形象：客户去银行办业务，接待客户的是银行柜员，而不是专业业务人员。柜员就是一个服务，以用户听的懂的方式去和用户沟通，并把用户的要求转化为业务语言，再由银行内部的专业业务人员执行相应操作，柜员最后把执行结果转化为用户的语言，为其服务。<br><code>所以服务就是一个通道，是访问业务的一个通道。</code></p>
+<p>但上面的图暴露了一个很严重问题，过于耦合，服务为完成用户访问生命周期，但上图却承担包括了组合业务和存储这两个还要提供用户访问。用户为完成访问业务逻辑生命周期，需要做的是：</p>
+<ul>
+<li>服务首先要把业务的状态从存储中加载。这是一个生命周期，主体为业务状态获取。</li>
+<li>服务调用并组合业务逻辑完成业务的访问。这是一个生命周期，主体为业务访问。</li>
+<li>服务把业务逻辑执行后的状态保存到存储中。这是一个生命周期，主体为业务状态保存。</li>
+</ul>
+<p>这里拿自己的后端代码打个比方，之前为了高效开发，公司的后端代码架构基本就是上面这种架构，也就是MC架构，这里的C端控制器做的工作很多，有业务逻辑，有粘合代码，甚至还包括了存储获取代码。每个业务没有重用性，不过幸好写的是基于restful架构的api，每个业务都是一个接口，<br>业务代码基本上是独立的。但是业务代码没有重用性可言，所以上面这种模型是很不好的，我们应该弃用。</p>
+<h2 id="拆分后的架构"><a href="#拆分后的架构" class="headerlink" title="拆分后的架构"></a>拆分后的架构</h2><p><img src="http://wx2.sinaimg.cn/mw690/7503dc51ly1fhlna4t4n0j20qo0rjafe.jpg" alt="image"><br>拆分后的架构如图所示，可以看出各部分是独立的，黏合代码整合了业务和存储，服务则整合了黏合代码。在实际应用中，服务为控制器中的action，业务在独立的logic层，存储在model层。而黏合代码可以看做一个管理者即XXManager，比如一个订单业务黏合代码就是一个OrderManager类。</p>
+<h3 id="为什么要这样做"><a href="#为什么要这样做" class="headerlink" title="为什么要这样做"></a>为什么要这样做</h3><p>有些人会问为什么不把存储挂在服务上，这样黏合代码就不需要了。但这样的后果就是让银行的核心人员，直接面接待客户，用户的访问因为沟通效率低就变得非常困难。黏合代码相当于一个具备行为和记忆的完整业务人，不应该直接面对用户。<br>正确的方式应该是给用户独立的访问通道,就好比银行采用柜台人员来做接待一样。服务相当于柜台是面向用户的。用户的需求是变化最频繁的,服务的方式可以避免频繁的用户需求变化对内部分工的冲击。没有服务的保护会导致用户的需求直接冲击存储,西存储非常脆弱必须保护起来。还有人会问,为何不把存储挂在业务上?这也是可以的,大家把这叫作活动记录( Active record)但这会让关心业务模型的代码人员,受到存储的影响,必然无法专注于业务生命周期上。并且存储的变动,会极大地影响业务生命周期所以一般也不采用这种方式。毕竟内存持久化的问题是计算机体系结构本身的问题,不应该由业务代比码人员来解决。采用存储挂在黏合代码上的方式,可以让黏合代码成为一个完整的虚拟人虚拟人具备记忆和行为,可以均衡地处理上述两个问题。有以上两种方式的好处,而又没有太大的弊病,这才是最合适的。因此代码就划分出了以下几个责任</p>
+<ol>
+<li>服务专注于用户(User)的需求,通过组织黏合代码,也就是虚拟人所提供的生命周期活动完成需求。</li>
+<li>黏合代码专注于管理业务中对象的生命周期,并且通过存储保存或加载业务中对象的状态,实现对业务虚拟人的模拟。</li>
+<li>业务专注于实现业务的生命周期活动。</li>
+<li>存储专注于数据的保存和加载,并让数据和存储设备的存储粒度一一对应。</li>
+</ol>
+<p>分工后各个业务都是独立的，不同部分的开发人员可以并行的进行开发，不仅提升力效率而且缩短了时间。比如负责业务逻辑的可以专注与业务逻辑的开发，存储部分独立了那么DBA做一些sql优话也不会影响到业务层。各个部分都是独立的，虽然前期会加大一些工作量，但是职能清晰后的代码是易维护的，能进行单元测试的。</p>
 
       
     </div>
@@ -420,19 +439,13 @@ Subscribe to see which companies asked t">
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/leetcode/" rel="tag"># leetcode</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/18/invert-tree/" rel="next" title="invert_tree">
-                <i class="fa fa-chevron-left"></i> invert_tree
+              <a href="/2017/03/12/装饰器模式/" rel="next" title="装饰器模式(转)">
+                <i class="fa fa-chevron-left"></i> 装饰器模式(转)
               </a>
             
           </div>
@@ -440,10 +453,6 @@ Subscribe to see which companies asked t">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/01/18/LCA-Of-BST/" rel="prev" title="lca_of_bst">
-                lca_of_bst <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -469,8 +478,8 @@ Subscribe to see which companies asked t">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/01/18/max-depth-tree/"
-           data-title="max_depth_tree" data-url="http://yoursite.com/2017/01/18/max-depth-tree/">
+      <div class="ds-thread" data-thread-key="2017/07/16/如何写好代码1/"
+           data-title="聊聊架构之如何写好代码（1）" data-url="http://yoursite.com/2017/07/16/如何写好代码1/">
       </div>
     
   </div>
@@ -494,8 +503,17 @@ Subscribe to see which companies asked t">
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -580,6 +598,22 @@ Subscribe to see which companies asked t">
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是代码"><span class="nav-number">1.</span> <span class="nav-text">什么是代码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#那什么又是服务呢？"><span class="nav-number">2.</span> <span class="nav-text">那什么又是服务呢？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#拆分后的架构"><span class="nav-number">3.</span> <span class="nav-text">拆分后的架构</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要这样做"><span class="nav-number">3.1.</span> <span class="nav-text">为什么要这样做</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
     </div>
